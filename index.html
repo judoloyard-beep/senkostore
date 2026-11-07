@@ -122,20 +122,20 @@ footer{
   <p>Scan QRIS untuk melakukan pembayaran.</p>
 
   <img
-    src="assets/images/qris.png"
+    src="assets/images/request_money_qr.png"
     alt="QRIS Senko Store"
     style="width:220px;max-width:90%;border-radius:12px"
   >
  </section>
 
 <script>
-const WA_NUMBER = "6281234567890";
+const WA_NUMBER = "6285719046064";
 
 function buy(product,price){
  const message =
  `Halo, saya ingin membeli ${product} seharga Rp${price}. Bagaimana cara pembayarannya melalui DANA/QRIS?`;
  window.open(
-  "https://wa.me/"+WA_NUMBER+
+  "https://wa.me/"+6285719046064+
   "?text="+encodeURIComponent(message),
   "_blank"
  );
