@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senko Digital Store</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#090b12;
+ color:#fff;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:20px 7%;
+ display:flex;
+ justify-content:space-between;
+ border-bottom:1px solid #242638;
+}
+.logo{font-size:21px;font-weight:bold}
+.logo span{color:#a78bfa}
+.hero{text-align:center;padding:75px 20px}
+.hero h1{font-size:40px;margin:15px 0}
+.hero p{color:#999;line-height:1.7}
+.btn{
+ display:inline-block;
+ background:#8b5cf6;
+ color:white;
+ padding:13px 22px;
+ border-radius:10px;
+ text-decoration:none;
+ margin-top:15px;
+}
+.products{
+ padding:20px 7% 60px;
+}
+.products h2{margin-bottom:25px}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:18px;
+}
+.card{
+ background:#141722;
+ border:1px solid #272b3b;
+ border-radius:15px;
+ padding:20px;
+}
+.card .icon{font-size:35px}
+.card p{color:#999;font-size:14px}
+.price{font-weight:bold;color:#bba5ff}
+button{
+ width:100%;
+ padding:12px;
+ border:0;
+ border-radius:9px;
+ background:#8b5cf6;
+ color:white;
+ margin-top:15px;
+ font-weight:bold;
+}
+footer{
+ text-align:center;
+ padding:25px;
+ color:#777;
+ border-top:1px solid #242638;
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">SENKO<span>.</span>STORE</div>
+ <div>Digital Shop</div>
+</header>
+
+<div class="hero">
+ <h1>Welcome to Senko Store.</h1>
+ <p>Temukan produk digital favoritmu.<br>
+ Cepat, mudah dan terpercaya.</p>
+ <a href="#produk" class="btn">Jelajahi Produk</a>
+</div>
+
+<section class="products" id="produk">
+ <h2>Produk Digital</h2>
+ <div class="grid">
+
+  <div class="card">
+   <div class="icon">💻</div>
+   <h3>Template Website</h3>
+   <p>Template website modern siap digunakan.</p>
+   <div class="price">Rp25.000</div>
+   <button onclick="buy('Template Website','25000')">Beli Sekarang</button>
+  </div>
+
+  <div class="card">
+   <div class="icon">🎨</div>
+   <h3>Template HTML</h3>
+   <p>Source code HTML untuk proyekmu.</p>
+   <div class="price">Rp15.000</div>
+   <button onclick="buy('Template HTML','15000')">Beli Sekarang</button>
+  </div>
+
+  <div class="card">
+   <div class="icon">⚡</div>
+   <h3>Source Code</h3>
+   <p>Kumpulan kode untuk belajar coding.</p>
+   <div class="price">Rp20.000</div>
+   <button onclick="buy('Source Code','20000')">Beli Sekarang</button>
+  </div>
+
+ </div>
+</section>
+
+<footer>
+ © 2026 Senko Digital Store
+</footer>
+
+<script>
+const WA_NUMBER = "6281234567890";
+
+function buy(product,price){
+ const message =
+ `Halo, saya ingin membeli ${product} seharga Rp${price}. Bagaimana cara pembayarannya melalui DANA/QRIS?`;
+ window.open(
+  "https://wa.me/"+WA_NUMBER+
+  "?text="+encodeURIComponent(message),
+  "_blank"
+ );
+}
+</script>
+
+</body>
+</html>
