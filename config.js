@@ -3,7 +3,7 @@
 
 const STORE_CONFIG = {
   name: "SENKO STORE",
-  whatsapp: "6281234567890",
+  whatsapp: "6285719046064",
 
   products: [
     { id: 1, name: "Website Starter Kit", description: "Template website modern dan responsif.", price: 35000, icon: "🌐" },
