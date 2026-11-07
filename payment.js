@@ -8,7 +8,7 @@ const PAYMENT = {
 
   qris: {
     name: "QRIS",
-    image: "assets/images/qris.png"
+    image: "assets/images/request_money_qr.png"
   },
 
   whatsapp: "085719046064"
