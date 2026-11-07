@@ -141,7 +141,7 @@ function checkout() {
 
   message += "Total: " + formatPrice(total);
 
-  const url = "https://wa.me/" + phone +
+  const url = "https://wa.me/" + 6285719046064 +
     "?text=" + encodeURIComponent(message);
 
   window.open(url, "_blank");
